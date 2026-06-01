@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dk7w1jiuvjth6"]
+
+[ext_resource type="Texture2D" uid="uid://wcm2nwt611dv" path="res://Assets/Untitled-removebg-preview.png" id="1_buorm"]
+[ext_resource type="Script" uid="uid://ckd08g4kqmr25" path="res://birb.gd" id="1_s8u3n"]
+
+[node name="Node3D" type="Node3D" unique_id=671258693]
+transform = Transform3D(6.123526, 0, 0, 0, 4.3791666, 0, 0, 0, 2.5558593, 0, 358.32065, 0)
+script = ExtResource("1_s8u3n")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=210328876]
+billboard = 1
+shaded = true
+texture = ExtResource("1_buorm")

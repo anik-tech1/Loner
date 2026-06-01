@@ -1,0 +1,1402 @@
+[gd_scene format=3 uid="uid://b46sx7qj64vy0"]
+
+[ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://player/player.tscn" id="2_5g145"]
+[ext_resource type="TextureSetsResource" uid="uid://8ib353vmydx6" path="res://new_texture_sets_resource.tres" id="2_mabe0"]
+[ext_resource type="Shader" uid="uid://bcksm31try8lf" path="res://beach.gdshader" id="3_5g145"]
+[ext_resource type="Image" uid="uid://cx1wroy3s23g6" path="res://Node3D/Heightmap_-1_0.res" id="3_v2lcl"]
+[ext_resource type="Image" uid="uid://dh43wtxg5eh2p" path="res://Node3D/Splatmap_0_0_0.res" id="4_ncmph"]
+[ext_resource type="Image" uid="uid://dvsoe528qes1a" path="res://Node3D/Heightmap_-1_1.res" id="4_xyq5p"]
+[ext_resource type="Image" uid="uid://pn7mnnjl84dw" path="res://Node3D/Heightmap_0_1.res" id="5_phhon"]
+[ext_resource type="Image" uid="uid://b7842c3splh3h" path="res://Node3D/Heightmap_-1_-1.res" id="6_hfvte"]
+[ext_resource type="Image" uid="uid://b6166uooedjm7" path="res://Node3D/Heightmap_0_0.res" id="6_m3vnf"]
+[ext_resource type="Image" uid="uid://jg2yqqhjdsvi" path="res://Node3D/Splatmap_-1_0_0.res" id="6_pv5v8"]
+[ext_resource type="Image" uid="uid://c8whkxxpsg5qt" path="res://Node3D/Splatmap_-1_1_0.res" id="8_is61w"]
+[ext_resource type="Image" uid="uid://mtjjaurq1q8d" path="res://Node3D/Splatmap_0_1_0.res" id="10_fjutp"]
+[ext_resource type="Image" uid="uid://btagaa4gixhe6" path="res://Node3D/Splatmap_-1_-1_0.res" id="12_apfgm"]
+[ext_resource type="Image" uid="uid://dne3lmochw1dy" path="res://Node3D/Heightmap_1_1.res" id="13_myndl"]
+[ext_resource type="Image" uid="uid://gyv1hau3pmxk" path="res://Node3D/Splatmap_1_1_0.res" id="14_uwhap"]
+[ext_resource type="Image" uid="uid://dupsm4mapt3qh" path="res://Node3D/Heightmap_-2_1.res" id="15_cb1r2"]
+[ext_resource type="Image" uid="uid://cen1a0w3jcveo" path="res://Node3D/Splatmap_-2_1_0.res" id="16_mrggm"]
+[ext_resource type="Image" uid="uid://cjd8pn2eu4jv0" path="res://Node3D/Heightmap_-3_1.res" id="17_77ugj"]
+[ext_resource type="Image" uid="uid://5q6vtq85gyxr" path="res://Node3D/Splatmap_-3_1_0.res" id="18_7xo4a"]
+[ext_resource type="Image" uid="uid://dk7esl2yimxpe" path="res://Node3D/Heightmap_2_1.res" id="19_q7dik"]
+[ext_resource type="Image" uid="uid://ban7fq1rwtjm1" path="res://Node3D/Splatmap_2_1_0.res" id="20_wqkia"]
+[ext_resource type="Image" uid="uid://coeoivjn4b7y0" path="res://Node3D/Heightmap_1_0.res" id="21_pjt1a"]
+[ext_resource type="Image" uid="uid://c4hg21k4amaxo" path="res://Node3D/Splatmap_1_0_0.res" id="22_27mm6"]
+[ext_resource type="Image" uid="uid://b0y52fgx8eg6j" path="res://Node3D/Heightmap_-2_0.res" id="23_2d0t3"]
+[ext_resource type="Image" uid="uid://xdmdufs5rwq8" path="res://Node3D/Splatmap_-2_0_0.res" id="24_dlspf"]
+[ext_resource type="Image" uid="uid://dv0q8qcifbs6b" path="res://Node3D/Heightmap_1_-1.res" id="25_77ugj"]
+[ext_resource type="Image" uid="uid://csk3vl1kls2hg" path="res://Node3D/Splatmap_1_-1_0.res" id="26_7xo4a"]
+[ext_resource type="ArrayMesh" uid="uid://b218qy8jgj3mj" path="res://Assets/buildings/building_01_smooth.obj" id="26_leup2"]
+[ext_resource type="Image" uid="uid://cdw5g71xl6h2p" path="res://Node3D/Heightmap_0_-1.res" id="27_q7dik"]
+[ext_resource type="Texture2D" uid="uid://cybnjn8vyifvp" path="res://Assets/buildings/diffuse_.jpg" id="27_u412p"]
+[ext_resource type="ArrayMesh" uid="uid://bgeag0rv8qsti" path="res://Assets/buildings/building_02_smooth.obj" id="28_343px"]
+[ext_resource type="Image" uid="uid://bg5f6d5nmbup3" path="res://Node3D/Splatmap_0_-1_0.res" id="28_wqkia"]
+[ext_resource type="Image" uid="uid://dtpg07a220yfb" path="res://generated_terrain/second/Heightmap_-1_-2.res" id="29_dlspf"]
+[ext_resource type="ArrayMesh" uid="uid://ttt0j5cy2abl" path="res://Assets/buildings/building_03_smooth.obj" id="29_ix5dh"]
+[ext_resource type="ArrayMesh" uid="uid://rbmajgsfgoxk" path="res://Assets/buildings/building_04_smooth.obj" id="30_4y2dc"]
+[ext_resource type="Image" uid="uid://bk4wp7gvao3bm" path="res://generated_terrain/second/Splatmap_-1_-2_0.res" id="30_leup2"]
+[ext_resource type="ArrayMesh" uid="uid://bnlkel6upuk7q" path="res://Assets/buildings/building_05_smooth.obj" id="31_hpfgv"]
+[ext_resource type="Image" uid="uid://dwgitewgnvd3r" path="res://generated_terrain/second/Heightmap_0_-2.res" id="31_u412p"]
+[ext_resource type="Image" uid="uid://bjo2n8lfmkkkm" path="res://generated_terrain/second/Splatmap_0_-2_0.res" id="32_343px"]
+[ext_resource type="ArrayMesh" uid="uid://dsfpkt4lef31h" path="res://Assets/buildings/building_06_smooth.obj" id="32_o0e58"]
+[ext_resource type="ArrayMesh" uid="uid://dul7dsjvmt06f" path="res://Assets/buildings/building_07_smooth.obj" id="33_pyubm"]
+[ext_resource type="ArrayMesh" uid="uid://b7im5qrqobc4r" path="res://Assets/buildings/building_08_smooth.obj" id="34_ewfxw"]
+[ext_resource type="ArrayMesh" uid="uid://cb7l85a3lbe4g" path="res://Assets/buildings/building_09_smooth.obj" id="35_3yr11"]
+[ext_resource type="ArrayMesh" uid="uid://roy427xaourr" path="res://Assets/buildings/building_10_smooth.obj" id="36_3e6qk"]
+[ext_resource type="ArrayMesh" uid="uid://ey6cpn45biv6" path="res://Assets/buildings/building_11_smooth.obj" id="37_7ne54"]
+[ext_resource type="AudioStream" uid="uid://buvsenrnoup3i" path="res://Assets/AMBSea_Sea waves and seagulls (ID 0267)_BigSoundBank.com.ogg" id="42_7xo4a"]
+[ext_resource type="Script" uid="uid://c20st2yqu433b" path="res://bird.gd" id="43_q7dik"]
+[ext_resource type="PackedScene" uid="uid://dk7w1jiuvjth6" path="res://birb.tscn" id="44_wqkia"]
+[ext_resource type="PackedScene" uid="uid://bdmtt62746qvi" path="res://sandcastle_puzzle.tscn" id="49_leup2"]
+[ext_resource type="PackedScene" uid="uid://bydust8xt1r1i" path="res://chair.tscn" id="50_u412p"]
+[ext_resource type="PackedScene" uid="uid://ws2p8xj5kybg" path="res://Palm tree.glb" id="51_343px"]
+[ext_resource type="Script" uid="uid://nib3kw6tw1ma" path="res://level_transition_ui.gd" id="52_ix5dh"]
+[ext_resource type="PackedScene" uid="uid://c58qdpvjpu52p" path="res://scene_transition.tscn" id="53_4y2dc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_we80j"]
+sky_top_color = Color(0.55761784, 0.39111847, 0.4872632, 1)
+sky_horizon_color = Color(0.7891924, 0.6175458, 0.44861996, 1)
+sky_curve = 0.27037504
+sky_energy_multiplier = 1.1
+ground_horizon_color = Color(0.81914824, 0.6079585, 0.36940277, 1)
+sun_angle_max = 8.68
+sun_curve = 3.1668172
+
+[sub_resource type="Sky" id="Sky_u8p4c"]
+sky_material = SubResource("ProceduralSkyMaterial_we80j")
+
+[sub_resource type="Environment" id="Environment_myndl"]
+background_mode = 2
+sky = SubResource("Sky_u8p4c")
+
+[sub_resource type="ZoneResource" id="ZoneResource_vvyr7"]
+heightMapImage = ExtResource("6_m3vnf")
+splatmapsImage = Array[Image]([ExtResource("4_ncmph")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_mabe0"]
+zonePosition = Vector2i(-1, 0)
+heightMapImage = ExtResource("3_v2lcl")
+splatmapsImage = Array[Image]([ExtResource("6_pv5v8")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_ncmph"]
+zonePosition = Vector2i(-1, 1)
+heightMapImage = ExtResource("4_xyq5p")
+splatmapsImage = Array[Image]([ExtResource("8_is61w")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_pv5v8"]
+zonePosition = Vector2i(0, 1)
+heightMapImage = ExtResource("5_phhon")
+splatmapsImage = Array[Image]([ExtResource("10_fjutp")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_is61w"]
+zonePosition = Vector2i(-1, -1)
+heightMapImage = ExtResource("6_hfvte")
+splatmapsImage = Array[Image]([ExtResource("12_apfgm")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_mp6x3"]
+zonePosition = Vector2i(1, 1)
+heightMapImage = ExtResource("13_myndl")
+splatmapsImage = Array[Image]([ExtResource("14_uwhap")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_17a5i"]
+zonePosition = Vector2i(-2, 1)
+heightMapImage = ExtResource("15_cb1r2")
+splatmapsImage = Array[Image]([ExtResource("16_mrggm")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_geh5c"]
+zonePosition = Vector2i(-3, 1)
+heightMapImage = ExtResource("17_77ugj")
+splatmapsImage = Array[Image]([ExtResource("18_7xo4a")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_sokp7"]
+zonePosition = Vector2i(2, 1)
+heightMapImage = ExtResource("19_q7dik")
+splatmapsImage = Array[Image]([ExtResource("20_wqkia")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_62fc5"]
+zonePosition = Vector2i(1, 0)
+heightMapImage = ExtResource("21_pjt1a")
+splatmapsImage = Array[Image]([ExtResource("22_27mm6")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_5mojk"]
+zonePosition = Vector2i(-2, 0)
+heightMapImage = ExtResource("23_2d0t3")
+splatmapsImage = Array[Image]([ExtResource("24_dlspf")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_pjt1a"]
+zonePosition = Vector2i(1, -1)
+heightMapImage = ExtResource("25_77ugj")
+splatmapsImage = Array[Image]([ExtResource("26_7xo4a")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_27mm6"]
+zonePosition = Vector2i(0, -1)
+heightMapImage = ExtResource("27_q7dik")
+splatmapsImage = Array[Image]([ExtResource("28_wqkia")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_ix5dh"]
+zonePosition = Vector2i(-1, -2)
+heightMapImage = ExtResource("29_dlspf")
+splatmapsImage = Array[Image]([ExtResource("30_leup2")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_4y2dc"]
+zonePosition = Vector2i(0, -2)
+heightMapImage = ExtResource("31_u412p")
+splatmapsImage = Array[Image]([ExtResource("32_343px")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_d38me"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_vvyr7"), SubResource("ZoneResource_mabe0"), SubResource("ZoneResource_ncmph"), SubResource("ZoneResource_pv5v8"), SubResource("ZoneResource_is61w"), SubResource("ZoneResource_mp6x3"), SubResource("ZoneResource_17a5i"), SubResource("ZoneResource_geh5c"), SubResource("ZoneResource_sokp7"), SubResource("ZoneResource_62fc5"), SubResource("ZoneResource_5mojk"), SubResource("ZoneResource_pjt1a"), SubResource("ZoneResource_27mm6"), SubResource("ZoneResource_ix5dh"), SubResource("ZoneResource_4y2dc")])
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u1030"]
+render_priority = 0
+shader = ExtResource("3_5g145")
+shader_parameter/water_color = Color(0.05, 0.45, 0.55, 1)
+shader_parameter/wave_color = Color(0.85, 0.95, 0.95, 1)
+shader_parameter/chunk_size = 1.0
+shader_parameter/animation_fps = 8.0
+shader_parameter/wave_speed = 1.5
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u1030"]
+material = SubResource("ShaderMaterial_u1030")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkt40"]
+albedo_texture = ExtResource("27_u412p")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5lqm"]
+albedo_texture = ExtResource("27_u412p")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fqgys"]
+albedo_texture = ExtResource("27_u412p")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_77ugj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7xo4a"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, 1, 0, -1, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_76kr6"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tm655"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_ly2dj"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_41rmn"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8so16"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yl6i1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_343px"]
+points = PackedVector3Array(16.890203, 141.07602, -63.8384, -5.2946744, 125.23011, -86.027, -5.2946744, 134.73766, -86.027, -14.807798, 137.90683, -63.8384, -14.807798, 141.07602, -76.51605, 7.3801823, 125.23011, -79.68492, 13.719162, 141.07602, -76.51605, 7.3801823, 125.23011, -86.027, 16.890203, 137.90683, -63.8384, -14.807798, 141.07602, -63.8384, 7.3801823, 134.73766, -86.027, -5.2946744, 125.23011, -79.68492, -14.807798, 134.73766, -76.51605, -8.465715, 141.07602, -79.68492, 16.890203, 137.90683, -70.18048, 7.3801823, 141.07602, -79.68492, 10.5481205, 131.57158, -82.85379, -14.807798, 134.73766, -70.18048)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ix5dh"]
+points = PackedVector3Array(-5.2946734, 141.0791, -79.68151, 16.890202, 156.9278, -35.317963, 7.3780093, 163.2677, -19.461205, 4.210692, 163.2677, -54.32249, -14.8034525, 150.59222, -28.981152, 16.890202, 141.0791, -57.493843, -14.8034525, 156.9278, -51.15114, 16.890202, 144.25014, -70.16746, -14.8034525, 141.0791, -57.493843, 10.54874, 153.75458, -22.63845, -5.2946734, 163.2677, -19.461205, -5.2946734, 153.75458, -70.16746, -17.977596, 147.419, -63.83065, -5.2946734, 163.2677, -54.32249, 4.210692, 144.25014, -79.68151, -17.977596, 153.75458, -38.48931, 16.890202, 156.9278, -44.82612, 7.3780093, 156.9278, -63.83065, 13.719471, 150.59222, -28.981152, -5.2946734, 156.9278, -19.461205, -11.632722, 160.09666, -22.63845, -14.8034525, 141.0791, -73.338806, -17.977596, 144.25014, -47.99747, 13.719471, 141.0791, -73.338806, -8.461991, 163.2677, -44.82612, -14.8034525, 147.419, -70.16746, -5.2946734, 144.25014, -79.68151, 7.3780093, 163.2677, -44.82612, -17.977596, 150.59222, -60.659298, 13.719471, 153.75458, -60.659298, 4.210692, 153.75458, -70.16746, 16.890202, 150.59222, -35.317963)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4y2dc"]
+points = PackedVector3Array(-5.2959146, -1.5618973, -3.6122017, 1.0412025, 90.356094, 21.746199, -2.1254945, 90.356094, 21.746199, 4.209761, 112.550896, 2.7298803, 10.550602, -1.5618973, 9.0669985, -8.468197, 4.7826653, 15.404117, -8.468197, 112.550896, 5.8996806, 7.3801813, 49.172276, 21.746199, 7.3801813, -1.5618973, -3.6122017, 7.3801813, 112.550896, 15.404117, -8.468197, 106.20633, 15.404117, 7.3801813, 112.550896, 5.8996806, -8.468197, -1.5618973, -0.43991947, 7.3801813, -1.5618973, 15.404117, -2.1254945, 36.483147, 21.746199, -5.2959146, 112.550896, 2.7298803, -8.468197, 84.0227, 18.576399, 10.550602, 7.9549484, 2.7298803, 7.3801813, 80.85042, 21.746199, -5.2959146, -1.5618973, 15.404117, -2.1254945, 109.37862, 18.576399, -2.1254945, 7.9549484, -3.6122017, -5.2959146, 84.0227, 21.746199, 1.0412025, 11.127232, 18.576399, 4.209761, 109.37862, 18.576399, 10.550602, 11.127232, 9.0669985, -5.2959146, 112.550896, 15.404117, -8.468197, 11.127232, -0.43991947, 7.3801813, 1.6103859, -3.6122017, -5.2959146, 4.7826653, -3.6122017, -5.2959146, 106.20633, 18.576399, -8.468197, -1.5618973, 12.231834)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hpfgv"]
+points = PackedVector3Array(-11.635515, 150.57982, -16.29047, 4.2091413, 125.23383, 15.406597, 7.378631, 128.4058, 12.235867, -2.127046, 163.25778, 9.065136, 13.720403, 160.09077, -16.29047, -8.466026, 112.55091, 5.894405, 4.2091413, 115.727844, -0.4436431, -14.807797, 163.25778, -6.778278, 10.5481205, 163.25778, 5.894405, -5.296536, 112.55091, 15.406597, 4.5164537, 164.8971, -20.588453, 13.720403, 147.41281, -16.29047, 7.378631, 112.55091, 12.235867, -14.807797, 160.09077, -0.4436431, 1.0396513, 150.57982, -19.4612, 13.720403, 150.57982, -3.6075475, -5.296536, 115.727844, -0.4436431, -14.807797, 150.57982, -13.11974, -5.296536, 163.25778, -19.4612, -8.466026, 112.55091, 12.235867, 7.378631, 163.25778, 9.065136, -5.296536, 118.89485, 15.406597, 7.378631, 112.55091, 5.894405, 10.5481205, 150.57982, -19.4612, -14.807797, 150.57982, -0.4436431, -14.807797, 160.09077, -13.11974, 4.2091413, 112.55091, 15.406597, -14.807797, 147.41281, -6.778278, 13.720403, 160.09077, -6.778278, 10.5481205, 163.25778, -13.11974, -5.296536, 112.55091, 2.7270875, -2.127046, 125.23383, 15.406597)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o0e58"]
+points = PackedVector3Array(13.720406, 179.11452, -35.313927, 51.75428, 175.94566, -44.813087, 51.75428, 172.77834, -44.813087, 32.737343, 169.60948, -16.291407, 13.720406, 166.43906, -44.813087, 35.90559, 175.94566, -57.498802, 32.737343, 182.28494, -25.802666, 12.062953, 169.19527, -14.495657, 51.75428, 169.60948, -54.32838, 42.24209, 182.28494, -47.98754, 16.8961, 182.28494, -22.632246, 32.737343, 175.94566, -16.291407, 48.58231, 179.11452, -35.313927, 29.572817, 182.28494, -47.98754, 16.8961, 166.43906, -32.14351, 26.404568, 175.94566, -54.32838, 35.90559, 169.60948, -57.498802, 48.58231, 175.94566, -57.498802, 13.720406, 172.77834, -44.813087, 13.720406, 175.94566, -16.291407, 48.58231, 172.77834, -35.313927, 16.8961, 182.28494, -35.313927, 51.75428, 175.94566, -54.32838, 51.75428, 169.60948, -51.15796, 48.58231, 169.60948, -57.498802, 16.8961, 179.11452, -41.646698, 20.064348, 166.43906, -44.813087, 26.404568, 169.60948, -54.32838, 45.414063, 179.11452, -54.32838, 39.07384, 182.28494, -32.14351, 13.720406, 179.11452, -19.461826, 48.58231, 179.11452, -51.15796)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pyubm"]
+points = PackedVector3Array(7.3808026, 166.43968, -6.7820015, 7.3808026, 163.26926, -32.137608, 10.550603, 163.26926, -32.137608, 13.720403, 179.11514, -28.966877, 13.720403, 163.26926, -9.952732, 1.0412025, 163.26926, -16.294193, 13.720403, 172.77586, -41.6498, 4.2122436, 172.77586, -22.635654, 13.720403, 179.11514, -19.464924, 1.0412025, 166.43968, -6.7820015, 7.3808026, 169.60854, -38.47907, 13.720403, 166.43968, -41.6498, 13.720403, 172.77586, -9.952732, 10.550603, 179.11514, -28.966877, 10.550603, 179.11514, -19.464924, 7.3808026, 162.90396, -5.978209, 7.3808026, 166.43968, -38.47907, 10.550603, 172.77586, -41.6498, 4.2122436, 172.77586, -13.123463, 1.0412025, 166.43968, -16.294193, 1.0412025, 163.26926, -6.7820015, 7.3808026, 172.77586, -35.30834, 4.2122436, 169.60854, -28.966877, 4.2122436, 163.26926, -28.966877)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ewfxw"]
+points = PackedVector3Array(13.723816, 175.94566, -16.2914, 48.588203, 172.7771, 21.746197, 39.07353, 172.7771, 21.746197, 26.402084, 163.2677, -13.119119, 48.588203, 179.11421, -9.946836, 13.723816, 163.2677, 9.064515, 32.7361, 182.2865, 9.064515, 48.588203, 169.60854, -13.119119, 45.41437, 166.43999, 21.746197, 13.723816, 172.7771, 5.8959565, 48.588203, 182.2865, 12.236797, 13.723816, 166.43999, -16.2914, 35.90652, 182.2865, -6.7782784, 42.24395, 172.7771, -16.2914, 23.235077, 172.7771, 15.405355, 23.235077, 163.2677, 15.405355, 13.723816, 163.2677, -13.119119, 29.572506, 182.2865, 5.8959565, 45.41437, 182.2865, -6.7782784, 42.24395, 169.60854, -16.2914, 26.402084, 175.94566, -16.2914, 39.07353, 182.2865, 12.236797, 29.572506, 182.2865, -3.6059961, 48.588203, 169.60854, 21.746197, 23.235077, 179.11421, 5.8959565, 45.41437, 166.43999, 15.405355, 16.894236, 169.60854, 12.236797, 26.402084, 163.2677, 15.405355, 29.572506, 166.43999, 18.573914, 48.588203, 175.94566, -13.119119, 48.588203, 182.2865, -3.6059961, 20.064655, 175.94566, 9.064515)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3yr11"]
+points = PackedVector3Array(67.60235, 182.28494, 2.7320526, 48.588203, 169.60948, -13.121601, 48.588203, 175.94566, -13.121601, 48.588203, 169.60948, 21.746197, 83.456, 166.43906, 2.7320526, 80.28527, 172.77834, 18.575466, 48.588203, 182.28494, 12.230593, 73.94381, 175.94566, -6.7801394, 64.44186, 166.43906, 21.746197, 67.60235, 175.94566, 21.746197, 48.588203, 182.28494, -3.6059957, 83.456, 172.77834, 2.7320526, 83.456, 166.43906, 15.404736, 67.60235, 169.60948, -9.9508705, 64.44186, 182.28494, 12.230593, 48.588203, 175.94566, 21.746197, 58.100395, 179.11452, -9.9508705, 83.456, 172.77834, 15.404736, 77.11454, 166.43906, -0.4386778, 54.929665, 175.94566, -13.121601, 73.94381, 179.11452, 12.230593, 80.28527, 175.94566, 2.7320526, 61.26771, 182.28494, -3.6059957, 70.77308, 166.43906, 21.746197, 51.758934, 179.11452, 18.575466, 54.929665, 169.60948, -13.121601, 73.94381, 169.60948, -6.7801394, 73.94381, 179.11452, -0.4386778, 67.60235, 175.94566, -9.9508705)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3e6qk"]
+points = PackedVector3Array(-40.1662, 185.4563, -19.467407, -75.03152, 166.4375, -44.8196, -78.2038, 166.4375, -38.47876, -40.1662, 169.60979, -6.7820015, -40.1662, 169.60979, -41.647316, -65.52212, 179.11546, -19.467407, -62.353558, 182.28401, -35.3102, -43.33848, 175.9469, -44.8196, -65.52212, 169.60979, -16.2914, -49.6756, 175.9469, -6.7820015, -75.03152, 172.77834, -44.8196, -78.2038, 172.77834, -32.134193, -40.1662, 185.4563, -28.965635, -62.353558, 166.4375, -44.8196, -78.2038, 166.4375, -32.134193, -46.510765, 185.4563, -19.467407, -49.6756, 169.60979, -6.7820015, -59.184998, 179.11546, -41.647316, -40.1662, 175.9469, -6.7820015, -71.85923, 175.9469, -22.635965, -62.353558, 182.28401, -25.8008, -75.03152, 175.9469, -35.3102, -62.353558, 179.11546, -16.2914, -43.33848, 169.60979, -44.8196, -40.1662, 182.28401, -35.3102, -43.33848, 182.28401, -13.122843, -49.6756, 185.4563, -28.965635, -65.52212, 175.9469, -16.2914, -65.52212, 175.9469, -44.8196, -71.85923, 166.4375, -32.134193, -75.03152, 169.60979, -25.8008, -75.03152, 175.9469, -28.965635)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7ne54"]
+points = PackedVector3Array(-8.469439, 172.78082, -16.294193, -40.1662, 169.6076, -41.6498, -36.993916, 166.43874, -38.47907, -40.1662, 175.94318, -6.7820015, -33.821632, 185.4563, -28.966877, -1.6728276, 163.00183, -6.3642125, -14.81028, 182.28526, -6.7820015, -40.1662, 169.6076, -6.7820015, -21.147398, 172.78082, -35.30834, -40.1662, 185.4563, -16.294193, -14.81028, 163.2677, -28.966877, -30.653076, 166.43874, -6.7820015, -40.1662, 175.94318, -41.6498, -27.897734, 182.80191, -5.645209, -2.1285973, 166.43874, -13.123463, -17.982563, 175.94318, -28.966877, -10.648896, 179.61092, -4.9686494, -17.982563, 163.2677, -19.464924, -27.484516, 166.43874, -38.47907, -40.1662, 185.4563, -28.966877, -14.81028, 182.28526, -9.952732, -8.469439, 169.6076, -22.635654, -2.1285973, 169.6076, -9.952732, -36.993916, 175.94318, -41.6498, -24.312233, 182.28526, -25.796146, -11.637998, 163.2677, -6.7820015, -8.469439, 163.2677, -22.635654, -33.821632, 185.4563, -16.294193, -30.653076, 179.1164, -35.30834, -33.821632, 169.6076, -41.6498, -2.1285973, 169.6076, -6.7820015)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mp6x3"]
+points = PackedVector3Array(-40.1662, 169.60854, -6.7813816, -17.552803, 182.6506, -3.551845, -17.977596, 182.2865, -6.7813816, -17.977596, 163.2677, -3.6125119, -40.1662, 175.94566, -3.6125119, -17.977596, 163.2677, -6.7813816, -30.655247, 182.2865, -6.7813816, -33.824116, 166.43999, -3.6125119, -30.655247, 182.2865, -3.6125119, -24.317507, 163.2677, -6.7813816, -40.1662, 175.94566, -6.7813816)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_17a5i"]
+points = PackedVector3Array(-33.825047, 201.3053, 21.746199, -30.66052, 182.2865, -6.7820015, -30.66052, 188.62733, -6.7820015, -49.672497, 194.96446, 12.234938, -17.9807, 185.45879, 21.746199, -17.9807, 194.96446, -0.4402299, -46.501766, 201.3053, 9.0626545, -17.9807, 182.2865, -6.7820015, -46.501766, 194.96446, 21.746199, -33.825047, 182.2865, -0.4402299, -17.9807, 194.96446, 18.573917, -30.66052, 201.3053, 5.89875, -24.32216, 185.45879, 21.746199, -43.331036, 198.13301, 2.72926, -46.501766, 201.3053, 21.746199, -27.48979, 201.3053, 15.404427, -36.992676, 185.45879, -3.6097193, -49.672497, 194.96446, 18.573917, -17.9807, 188.62733, -6.7820015, -49.672497, 201.3053, 12.234938, -46.501766, 191.7959, 5.89875, -24.32216, 198.13301, 21.746199, -21.15143, 198.13301, 2.72926, -17.9807, 182.2865, -0.4402299, -21.15143, 198.13301, 15.404427)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_geh5c"]
+points = PackedVector3Array(-17.974493, 175.94908, 28.086422, 13.7173, 182.28526, 50.26726, 13.7173, 175.94908, 50.26726, -5.2959146, 175.94908, 66.1234, -5.2959146, 188.62454, 31.256842, 12.603302, 173.33565, 26.364483, -11.633653, 182.28526, 59.778522, 7.37646, 185.45412, 24.916002, -17.974493, 172.77866, 34.42726, 4.2091417, 182.28526, 66.1234, 4.2091417, 188.62454, 43.938522, 13.7173, 172.77866, 34.42726, -14.804072, 172.77866, 24.916002, -17.974493, 179.11794, 28.086422, 13.7173, 179.11794, 24.916002, 7.37646, 175.94908, 62.952976, -8.466334, 185.45412, 24.916002, -5.2959146, 188.62454, 43.938522, -14.804072, 182.28526, 53.437683, -14.804072, 175.94908, 53.437683, -5.2959146, 182.28526, 66.1234, -11.633653, 185.45412, 34.42726, 7.37646, 185.45412, 56.612137, 13.7173, 182.28526, 31.256842, 4.2091417, 188.62454, 31.256842, 10.54688, 185.45412, 43.938522, 4.2091417, 175.94908, 66.1234, 7.37646, 182.28526, 62.952976, -11.633653, 175.94908, 59.778522, -5.2959146, 185.45412, 56.612137, -11.633653, 185.45412, 47.100876)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sokp7"]
+points = PackedVector3Array(-14.805626, 194.9626, 9.066998, -17.976046, 163.2708, -6.778899, -2.545735, 164.10197, -5.9477253, -14.805626, 169.61163, 24.912895, -2.130148, 185.45444, 24.912895, -5.300568, 182.28401, -6.778899, -1.1515465, 161.3136, 5.511258, -17.976046, 191.79218, 18.573914, -17.976046, 191.79218, -3.6078577, -2.130148, 175.94939, -6.778899, -11.636756, 191.79218, -3.6078577, -2.130148, 179.1167, 24.912895, -11.636756, 163.2708, 12.234936, -17.976046, 185.45444, -6.778899, -17.976046, 182.28401, 18.573914, -14.805626, 179.1167, 24.912895, -5.300568, 185.45444, -3.6078577, -11.636756, 169.61163, 24.912895, -2.130148, 185.45444, 18.573914, -17.976046, 163.2708, -3.6078577, -17.976046, 194.9626, 2.731121, -8.469438, 185.45444, 24.912895, -2.130148, 179.1167, -3.6078577, -14.805626, 166.44122, 18.573914)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_62fc5"]
+points = PackedVector3Array(13.718851, 179.1164, 24.912895, -1.8861021, 163.60509, -6.2970114, -2.127046, 169.6076, -6.778899, 13.718851, 163.2677, -6.778899, 7.3798714, 166.43874, 18.573914, -2.127046, 185.4563, 18.573914, 13.718851, 169.6076, -6.778899, -2.127046, 179.1164, 24.912895, 13.718851, 169.6076, 24.912895, -2.127046, 163.2677, 5.902162, 4.213485, 185.4563, 18.573914, 10.54936, 163.2677, 12.234936, -2.127046, 185.4563, 24.912895, 1.0439949, 172.78082, -3.6078577, 4.213485, 172.78082, 24.912895, 10.54936, 182.28526, 21.744957, 4.213485, 185.4563, 24.912895, 4.213485, 182.28526, 12.234936, 13.718851, 163.2677, 2.731121)
+
+[node name="Node3D" type="Node3D" unique_id=1309457788]
+
+[node name="Player" parent="." unique_id=169917354 instance=ExtResource("2_5g145")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -1.5063219, 0)
+floor_max_angle = 1.0471976
+footstep_sound = Array[AudioStream]([])
+run_speed = 50
+
+[node name="MeshInstance3D" parent="Player" index="0" unique_id=1254715583]
+visible = false
+
+[node name="CollisionShape3D" parent="Player" index="1" unique_id=1356428339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.79252934, 0)
+
+[node name="Crosshair" parent="Player" index="4" unique_id=944468374]
+mouse_filter = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1757382657]
+environment = SubResource("Environment_myndl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1245869481]
+transform = Transform3D(-0.93609625, 0.11640121, -0.33192527, -7.450581e-09, 0.9436566, 0.33092618, 0.3517437, 0.3097788, -0.8833534, 0, 27.342, -97.899796)
+light_color = Color(0.95686275, 0.80784315, 0.44313726, 1)
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=404326348]
+dataPath = "res://generated_terrain/second"
+textureSets = ExtResource("2_mabe0")
+terrainZones = SubResource("ZonesResource_d38me")
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 0.9998477, 0.017452406, 0, -0.017452406, 0.9998477, 0, -1.575, 0)
+metadata/_edit_lock_ = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=782509044]
+transform = Transform3D(-5.2358937, 8.1490725e-07, 999.98627, -17.452166, 999.8477, -0.09137975, -999.834, -17.452406, -5.235096, -0.82467157, -10.070992, -157.37576)
+mesh = SubResource("PlaneMesh_u1030")
+
+[node name="Building01Smooth" type="MeshInstance3D" parent="." unique_id=392909893]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 239.48557, 1.3473663, 430.70135)
+mesh = ExtResource("26_leup2")
+surface_material_override/0 = SubResource("StandardMaterial3D_jkt40")
+
+[node name="Building02Smooth" type="MeshInstance3D" parent="." unique_id=1273308065]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -70.276, -0.37949944, 512.3445)
+mesh = ExtResource("28_343px")
+surface_material_override/0 = SubResource("StandardMaterial3D_i5lqm")
+
+[node name="Building03Smooth" type="MeshInstance3D" parent="." unique_id=89990427]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -860.4985, 0.85476685, 425.40057)
+mesh = ExtResource("29_ix5dh")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building04Smooth" type="MeshInstance3D" parent="." unique_id=1274179556]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -591.1416, 0.85476685, 425.40057)
+mesh = ExtResource("30_4y2dc")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building05Smooth" type="MeshInstance3D" parent="." unique_id=1721000378]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 615.0817, 0.85476685, 414.5838)
+mesh = ExtResource("31_hpfgv")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building06Smooth" type="MeshInstance3D" parent="." unique_id=514885978]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -376.42828, 0.85476685, 406.40256)
+mesh = ExtResource("32_o0e58")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building07Smooth" type="MeshInstance3D" parent="." unique_id=2069331020]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -306.80356, 0.85476685, 341.17844)
+mesh = ExtResource("33_pyubm")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building08Smooth" type="MeshInstance3D" parent="." unique_id=877710905]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -434.70087, 0.85476685, 338.20544)
+mesh = ExtResource("34_ewfxw")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building09Smooth" type="MeshInstance3D" parent="." unique_id=774519926]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -41.29007, 0.85476685, 342.676)
+mesh = ExtResource("35_3yr11")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building10Smooth" type="MeshInstance3D" parent="." unique_id=1773146794]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 441.2895, 0.85476685, 395.7824)
+mesh = ExtResource("36_3e6qk")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="Building11Smooth" type="MeshInstance3D" parent="." unique_id=32006686]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -381.5097, 0.85476685, 526.43304)
+mesh = ExtResource("37_7ne54")
+surface_material_override/0 = SubResource("StandardMaterial3D_fqgys")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=53176384]
+transform = Transform3D(1000, 0, 0, 0, -4.371139e-05, 1000, 0, -1000, -4.371139e-05, 0, 1.299365e-05, 297.26007)
+visible = false
+mesh = SubResource("PlaneMesh_77ugj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" unique_id=966754795]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=1086475533]
+shape = SubResource("ConvexPolygonShape3D_7xo4a")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=971578447]
+transform = Transform3D(110.84448, -993.83777, 0, -4.344203e-05, -4.8451657e-06, 1000, -993.83777, -110.84448, -4.371139e-05, 86.481255, 1.2294167e-05, 281.25778)
+visible = false
+mesh = SubResource("PlaneMesh_77ugj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3" unique_id=1797272896]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D" unique_id=446242132]
+shape = SubResource("ConvexPolygonShape3D_7xo4a")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=720918145]
+transform = Transform3D(-999.6555, -26.246658, 3.637979e-12, -1.1472803e-06, 4.369633e-05, 1000, -26.246658, 999.6555, -4.371139e-05, 94.32304, -7.6110973e-07, -17.41218)
+visible = false
+mesh = SubResource("PlaneMesh_77ugj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4" unique_id=137547248]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D" unique_id=1947471506]
+shape = SubResource("ConvexPolygonShape3D_7xo4a")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1205292413]
+transform = Transform3D(-26.246614, 999.6555, 3.637979e-12, 4.3696324e-05, 1.147273e-06, 1000, 999.6555, 26.246614, -4.3711385e-05, -407.22876, -3.1297664e-06, -71.60076)
+visible = false
+mesh = SubResource("PlaneMesh_77ugj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5" unique_id=642473666]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D5/StaticBody3D" unique_id=1220282727]
+shape = SubResource("ConvexPolygonShape3D_7xo4a")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1571903546]
+stream = ExtResource("42_7xo4a")
+autoplay = true
+
+[node name="BirdSpawner" type="Node3D" parent="." unique_id=643225460]
+transform = Transform3D(0.19457665, 0, -0.98088735, 0, 1, 0, 0.98088735, 0, 0.19457665, -803.56665, 73.9364, -120.77592)
+script = ExtResource("43_q7dik")
+bird_scene = ExtResource("44_wqkia")
+spawn_radius = 10.0
+
+[node name="BirdSpawner2" type="Node3D" parent="." unique_id=1123992949]
+transform = Transform3D(0.19457665, 0, -0.98088735, 0, 1, 0, 0.98088735, 0, 0.19457665, 339.97913, 73.9364, -347.6188)
+script = ExtResource("43_q7dik")
+bird_scene = ExtResource("44_wqkia")
+spawn_radius = 10.0
+
+[node name="Node3D" parent="." unique_id=671258693 instance=ExtResource("44_wqkia")]
+transform = Transform3D(-1.2320389, 0, -2.5035937, 0, 4.3791666, 0, 5.998304, 0, -0.5142328, 0, 278.21777, -194.71263)
+
+[node name="SandcastlePuzzle" parent="." unique_id=1382465432 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.289127, 6.10392, 6.1782656)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle/CanvasLayer" parent_id_path=PackedInt32Array(1382465432, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="SandcastlePuzzle2" parent="." unique_id=2030847452 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.289127, 6.10392, 75.90974)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle2/CanvasLayer" parent_id_path=PackedInt32Array(2030847452, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="SandcastlePuzzle4" parent="." unique_id=587426260 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -138.1529, 6.10392, 75.90974)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle4/CanvasLayer" parent_id_path=PackedInt32Array(587426260, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="SandcastlePuzzle5" parent="." unique_id=369110934 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 6.10392, 77.15872)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle5/CanvasLayer" parent_id_path=PackedInt32Array(369110934, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="SandcastlePuzzle6" parent="." unique_id=1541063007 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 6.10392, 11.667152)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle6/CanvasLayer" parent_id_path=PackedInt32Array(1541063007, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="SandcastlePuzzle3" parent="." unique_id=1198238626 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.21667, 3.9467888, 6.1782656)
+player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
+base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
+
+[node name="Label" parent="SandcastlePuzzle3/CanvasLayer" parent_id_path=PackedInt32Array(1198238626, 1861030416) index="0" unique_id=1748643781]
+text = "Press E to Build
+"
+
+[node name="Bench" parent="." unique_id=991058601 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, 64.654366, 3.631012, 162.97542)
+
+[node name="Bench2" parent="." unique_id=1141522257 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, 0.94278336, -0.9339218, 162.97543)
+
+[node name="Bench3" parent="." unique_id=12008580 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, -70.91054, -1.5089111, 162.97545)
+
+[node name="Bench4" parent="." unique_id=626320217 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, -162.61346, -0.20829153, 162.97546)
+
+[node name="Bench5" parent="." unique_id=1928950784 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, -251.5836, -0.43329048, 162.97548)
+
+[node name="Bench6" parent="." unique_id=2120513169 instance=ExtResource("50_u412p")]
+transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, -313.71228, 0.6242709, 162.9755)
+
+[node name="Palm tree" parent="." unique_id=649662689 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 29.857395, 0.00637722, 233.0099)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree/palm_tree_01" parent_id_path=PackedInt32Array(649662689, 1037314422) index="0" unique_id=1517867415]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=157066522]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=826098726]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=1224268342]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=650533766]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=142579958]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=1263251035]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=2073826541]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=704833133]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=786376247]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=2130150825]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=447664157]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=1998515914]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=756936891]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=123326196]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=2093649361]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree2" parent="." unique_id=1282401569 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -82.56325, 0.00637722, 233.0099)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree2/palm_tree_01" parent_id_path=PackedInt32Array(1282401569, 1037314422) index="0" unique_id=1708469480]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1629363818]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=634786385]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1520475219]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1593370638]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=981880086]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1085886104]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=539741675]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1928342907]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1028755253]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=73140553]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=322354029]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1804309147]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=309753345]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1502699636]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=984365599]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree3" parent="." unique_id=1843424833 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -179.85086, 0.00637722, 233.0099)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree3/palm_tree_01" parent_id_path=PackedInt32Array(1843424833, 1037314422) index="0" unique_id=845909860]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=699705741]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=120483131]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1670709235]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=329879737]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1555930747]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1384253428]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=292137155]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1607773766]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1053400903]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=704622363]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=969941683]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1847264834]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1402637817]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=322246586]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=1340300525]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree4" parent="." unique_id=1795334119 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -179.85086, 0.00637722, 157.84677)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree4/palm_tree_01" parent_id_path=PackedInt32Array(1795334119, 1037314422) index="0" unique_id=98499715]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=218414370]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1653666760]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1965507677]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=478104728]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=480342110]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1586944084]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1240189465]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=2067916673]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=348922261]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1261366687]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1459927430]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1474500254]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1702990412]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=1044872563]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=838357300]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree5" parent="." unique_id=856467286 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -16.774231, 0.00637722, 189.06493)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree5/palm_tree_01" parent_id_path=PackedInt32Array(856467286, 1037314422) index="0" unique_id=1558315757]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=16237514]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=1886009084]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=547546575]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=894239169]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=2141290414]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=692288321]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=1374288538]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=417305420]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=588948080]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=649394469]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=2116906442]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=549571006]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=1334637445]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=696939774]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=2060342527]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree6" parent="." unique_id=746611709 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -64.072876, 0.00637722, 170.24069)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree6/palm_tree_01" parent_id_path=PackedInt32Array(746611709, 1037314422) index="0" unique_id=1026382031]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1616022511]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=93454491]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1902924331]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=2043976699]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=2100352116]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=336719952]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=42771857]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=198474590]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1351125393]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=594022437]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=2061969439]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1654345607]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=33369531]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1746274261]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1242173274]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree16" parent="." unique_id=709578952 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 63.156975, 0.00637722, 239.38893)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree16/palm_tree_01" parent_id_path=PackedInt32Array(709578952, 1037314422) index="0" unique_id=206802502]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1294757765]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=122704513]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1987135553]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=654049945]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1564888822]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=231468903]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1322632152]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1665707799]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1007987805]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=8808625]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=437818613]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1324347659]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=2023408164]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1879007707]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1803971464]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree17" parent="." unique_id=1027424374 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 63.156975, 0.00637722, 192.27925)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree17/palm_tree_01" parent_id_path=PackedInt32Array(1027424374, 1037314422) index="0" unique_id=1082895486]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=481783949]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1363526501]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=270081092]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1415977564]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=546228211]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1734600250]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1947337491]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=13734525]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=253679797]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1336506237]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=2091271075]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=2360416]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1594361566]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=1437076613]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=742132020]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree18" parent="." unique_id=659548228 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 21.439903, 0.00637722, 192.27925)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree18/palm_tree_01" parent_id_path=PackedInt32Array(659548228, 1037314422) index="0" unique_id=1156275286]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1836721585]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=755898519]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=551626864]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1531706899]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=668518097]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=718271159]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1094827006]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=63243198]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1136339532]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=2141498838]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=2096797539]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=155590038]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1929308438]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=494167737]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1207738888]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree7" parent="." unique_id=1332776203 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -131.75601, 0.00637722, 170.24069)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree7/palm_tree_01" parent_id_path=PackedInt32Array(1332776203, 1037314422) index="0" unique_id=1691545064]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=303956561]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=348254875]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=1494754049]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=2063669158]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=355362300]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=2106500666]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=447279991]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=1696660752]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=74735205]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=100517484]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=930568171]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=1612314651]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=217307116]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=1546061542]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=245066829]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree8" parent="." unique_id=564766150 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -215.93207, 0.00637722, 170.24069)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree8/palm_tree_01" parent_id_path=PackedInt32Array(564766150, 1037314422) index="0" unique_id=957323601]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=529265785]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=931731218]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=710046343]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1616675368]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1399829845]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1525366054]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=540275043]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1100548971]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=2021119311]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=573287444]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1889208264]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=144096308]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=509869015]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=268435174]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=1894474174]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree9" parent="." unique_id=30171080 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -248.78738, 0.00637722, 241.73674)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree9/palm_tree_01" parent_id_path=PackedInt32Array(30171080, 1037314422) index="0" unique_id=419922331]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=2139332596]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1963349486]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=520687341]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=720528589]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=221150862]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1226029502]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=709712543]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=866730487]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=562431589]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1361979648]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=481855407]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1623985317]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1152966448]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=779617981]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=1909354190]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree10" parent="." unique_id=1489250708 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -314.37286, 0.00637722, 241.73674)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree10/palm_tree_01" parent_id_path=PackedInt32Array(1489250708, 1037314422) index="0" unique_id=1646237638]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1153482752]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=2063555146]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1928158865]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=836240701]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=305063264]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1635835338]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1851978050]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=594046278]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1570313662]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=2043877303]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1452502025]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=633008825]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=5226053]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1750623955]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=892250980]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree11" parent="." unique_id=704604601 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -314.37286, 0.00637722, 183.82317)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree11/palm_tree_01" parent_id_path=PackedInt32Array(704604601, 1037314422) index="0" unique_id=905777721]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=304490083]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1440848608]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1290644596]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=996497293]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=935933061]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1424106005]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=22075579]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=416032557]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=197079732]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1989904566]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1675625157]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1114616188]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1822494220]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=910128017]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=1077994414]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree12" parent="." unique_id=255871650 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -383.59564, 0.00637722, 183.82317)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree12/palm_tree_01" parent_id_path=PackedInt32Array(255871650, 1037314422) index="0" unique_id=1285637790]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1317534897]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1922889644]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=2051067542]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=689931281]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1823765856]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1141333672]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1599985621]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=948181128]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1546268495]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1924179386]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=166395070]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1780545741]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=594262131]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1758722771]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1232874829]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree13" parent="." unique_id=509101141 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -399.5046, 0.00637722, 219.27823)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree13/palm_tree_01" parent_id_path=PackedInt32Array(509101141, 1037314422) index="0" unique_id=1668932351]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1830875193]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1788541572]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1771731363]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1445360143]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=270413300]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1924138175]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1816989439]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1294381476]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=13568921]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1651574176]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=811644737]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=81202622]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=384772127]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=871236341]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=536545390]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree14" parent="." unique_id=604942435 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -478.442, 0.00637722, 156.88608)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree14/palm_tree_01" parent_id_path=PackedInt32Array(604942435, 1037314422) index="0" unique_id=949386265]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=350918309]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1324225060]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1131904582]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=258528158]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1808075192]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=170538261]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1928482191]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=672992142]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1075747338]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=765893012]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=82612255]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=935555387]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=2051864693]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=1679845447]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=5488012]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="Palm tree15" parent="." unique_id=1081361225 instance=ExtResource("51_343px")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -478.442, 0.00637722, 232.6891)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree15/palm_tree_01" parent_id_path=PackedInt32Array(1081361225, 1037314422) index="0" unique_id=400897702]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1087860776]
+shape = SubResource("ConvexPolygonShape3D_343px")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=613468887]
+shape = SubResource("ConvexPolygonShape3D_ix5dh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=971277541]
+shape = SubResource("ConvexPolygonShape3D_4y2dc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=712271277]
+shape = SubResource("ConvexPolygonShape3D_hpfgv")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1595636306]
+shape = SubResource("ConvexPolygonShape3D_o0e58")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1980625552]
+shape = SubResource("ConvexPolygonShape3D_pyubm")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1616112785]
+shape = SubResource("ConvexPolygonShape3D_ewfxw")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1849362192]
+shape = SubResource("ConvexPolygonShape3D_3yr11")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=478670778]
+shape = SubResource("ConvexPolygonShape3D_3e6qk")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=2128236465]
+shape = SubResource("ConvexPolygonShape3D_7ne54")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=173377487]
+shape = SubResource("ConvexPolygonShape3D_mp6x3")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1669739431]
+shape = SubResource("ConvexPolygonShape3D_17a5i")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1989762693]
+shape = SubResource("ConvexPolygonShape3D_geh5c")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=969078807]
+shape = SubResource("ConvexPolygonShape3D_sokp7")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1840792501]
+shape = SubResource("ConvexPolygonShape3D_62fc5")
+
+[node name="LevelTransitionUI" type="CanvasLayer" parent="." unique_id=523738143]
+script = ExtResource("52_ix5dh")
+next_scene_path = "res://farm.tscn"
+
+[node name="Label" type="Label" parent="LevelTransitionUI" unique_id=576641968]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press F to go to the Next Spot"
+
+[node name="SceneTransition" parent="." unique_id=2095953779 instance=ExtResource("53_4y2dc")]
+
+[editable path="Player"]
+[editable path="SandcastlePuzzle"]
+[editable path="SandcastlePuzzle2"]
+[editable path="SandcastlePuzzle4"]
+[editable path="SandcastlePuzzle5"]
+[editable path="SandcastlePuzzle6"]
+[editable path="SandcastlePuzzle3"]
+[editable path="Palm tree"]
+[editable path="Palm tree2"]
+[editable path="Palm tree3"]
+[editable path="Palm tree4"]
+[editable path="Palm tree5"]
+[editable path="Palm tree6"]
+[editable path="Palm tree16"]
+[editable path="Palm tree17"]
+[editable path="Palm tree18"]
+[editable path="Palm tree7"]
+[editable path="Palm tree8"]
+[editable path="Palm tree9"]
+[editable path="Palm tree10"]
+[editable path="Palm tree11"]
+[editable path="Palm tree12"]
+[editable path="Palm tree13"]
+[editable path="Palm tree14"]
+[editable path="Palm tree15"]
+[editable path="SceneTransition"]

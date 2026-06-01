@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://mgp02mkor0at"]
+
+[ext_resource type="PackedScene" uid="uid://bj84tig64hscn" path="res://Phone.glb" id="1_dst42"]
+[ext_resource type="PackedScene" uid="uid://bu7wabhkj72uq" path="res://house/scene1.tscn" id="1_noarx"]
+[ext_resource type="Script" uid="uid://baj8upmvggljk" path="res://house/camera_3d.gd" id="2_4n4jk"]
+[ext_resource type="Script" uid="uid://c61qlprnv1xya" path="res://house/node.gd" id="4_f8cqe"]
+[ext_resource type="AudioStream" uid="uid://bh2jsoeau1s4w" path="res://Assets/COMTelph_Telephone booth ringtone 2 (ID 3365)_BigSoundBank.com.ogg" id="4_ogiw4"]
+[ext_resource type="AudioStream" uid="uid://boajxqrjjf6vw" path="res://Assets/STORM_Rain and storm (ID 0124)_BigSoundBank.com.ogg" id="6_vra75"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_noarx"]
+sky_top_color = Color(0.19278717, 0.23783416, 0.2978454, 1)
+sky_horizon_color = Color(0.37107152, 0.37835717, 0.39294195, 1)
+sky_cover_modulate = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.11195134, 0.1150829, 0.1213532, 1)
+sun_angle_max = 125.78
+sun_curve = 0.2611651
+
+[sub_resource type="Sky" id="Sky_a0tk4"]
+sky_material = SubResource("ProceduralSkyMaterial_noarx")
+
+[sub_resource type="Environment" id="Environment_r3fl7"]
+background_mode = 2
+sky = SubResource("Sky_a0tk4")
+
+[node name="Node3D" type="Node3D" unique_id=1971432827]
+
+[node name="Untitled" parent="." unique_id=797349603 instance=ExtResource("1_noarx")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Untitled" unique_id=1483901400]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.353393, 1.513617, -2.1368575)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1527927806]
+environment = SubResource("Environment_r3fl7")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1946802548]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.0628314, 1.2440128, -2.1368575)
+script = ExtResource("2_4n4jk")
+
+[node name="HandPhone" parent="Camera3D" unique_id=1682005269 instance=ExtResource("1_dst42")]
+transform = Transform3D(-0.006625287, -0.007825862, -0.099472925, -0.06426897, 0.07659278, -0.0017452406, 0.076325655, 0.063814595, -0.010104093, 0.143, -0.03, -0.099)
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Camera3D/HandPhone" unique_id=879299845]
+stream = ExtResource("4_ogiw4")
+
+[node name="Label" type="Label" parent="Camera3D/HandPhone" unique_id=1352356827]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press E to Answer"
+
+[node name="Node" type="Node" parent="." unique_id=412864905 node_paths=PackedStringArray("prompt_ui", "hand_phone", "ring_sound")]
+script = ExtResource("4_f8cqe")
+prompt_ui = NodePath("../Camera3D/HandPhone/Label")
+hand_phone = NodePath("../Camera3D/HandPhone")
+ring_sound = NodePath("../Camera3D/HandPhone/AudioStreamPlayer")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1726532328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6797476, 12.167037, 0)
+stream = ExtResource("6_vra75")
+volume_db = 20.0
+autoplay = true

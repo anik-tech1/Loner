@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://bdmtt62746qvi"]
+
+[ext_resource type="Script" uid="uid://clb0reivoph38" path="res://sandcastle_puzzle.gd" id="1_lly7a"]
+[ext_resource type="Script" uid="uid://cpm76rt32hxxb" path="res://top_trigger.gd" id="2_84te1"]
+[ext_resource type="Material" uid="uid://bkblq1omlai4l" path="res://new_standard_material_3d.tres" id="2_tm655"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tm655"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_76kr6"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_ly2dj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yl6i1"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8so16"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_41rmn"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_j0blt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qhi31"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3e338"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_h87vv"]
+material = ExtResource("2_tm655")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h87vv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lly7a"]
+material = ExtResource("2_tm655")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lly7a"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_84te1"]
+material = ExtResource("2_tm655")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_84te1"]
+radius = 0.50927734
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_tm655"]
+height = 4.6608887
+radius = 5.3476563
+
+[node name="SandcastlePuzzle" type="Node3D" unique_id=1382465432 node_paths=PackedStringArray("puzzle_camera", "prompt_ui")]
+script = ExtResource("1_lly7a")
+puzzle_camera = NodePath("PuzzleCamera")
+prompt_ui = NodePath("CanvasLayer/Label")
+base_models = Array[Mesh]([SubResource("CylinderMesh_tm655"), SubResource("BoxMesh_76kr6"), SubResource("PrismMesh_ly2dj")])
+mid_models = Array[Mesh]([SubResource("BoxMesh_yl6i1"), SubResource("CylinderMesh_8so16"), SubResource("PrismMesh_41rmn")])
+top_models = Array[Mesh]([SubResource("PrismMesh_j0blt"), SubResource("BoxMesh_qhi31"), SubResource("CylinderMesh_3e338")])
+
+[node name="TopMesh" type="MeshInstance3D" parent="." unique_id=789584452]
+transform = Transform3D(1.9571452, 0, 0, 0, 1, 0, 0, 0, 2.6207767, 0, 2.3061097, 0)
+mesh = SubResource("PrismMesh_h87vv")
+
+[node name="TopTrigger" type="Area3D" parent="TopMesh" unique_id=555514472 node_paths=PackedStringArray("puzzle_manager")]
+script = ExtResource("2_84te1")
+puzzle_manager = NodePath("../..")
+tier_id = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TopMesh/TopTrigger" unique_id=156814298]
+shape = SubResource("BoxShape3D_h87vv")
+
+[node name="MidMesh" type="MeshInstance3D" parent="." unique_id=1541847841]
+transform = Transform3D(2.1301682, 0, 0, 0, 1, 0, 0, 0, 3.1332042, 0, 1.320927, 0)
+mesh = SubResource("BoxMesh_lly7a")
+
+[node name="MidTrigger" type="Area3D" parent="MidMesh" unique_id=453211703 node_paths=PackedStringArray("puzzle_manager")]
+script = ExtResource("2_84te1")
+puzzle_manager = NodePath("../..")
+tier_id = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MidMesh/MidTrigger" unique_id=98982526]
+shape = SubResource("BoxShape3D_lly7a")
+
+[node name="BaseMesh" type="MeshInstance3D" parent="." unique_id=789788288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058025844, 0, 0)
+mesh = SubResource("CylinderMesh_84te1")
+
+[node name="BaseTrigger" type="Area3D" parent="BaseMesh" unique_id=1633736005 node_paths=PackedStringArray("puzzle_manager")]
+script = ExtResource("2_84te1")
+puzzle_manager = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BaseMesh/BaseTrigger" unique_id=381348284]
+transform = Transform3D(1.0000004, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_84te1")
+
+[node name="PuzzleCamera" type="Camera3D" parent="." unique_id=328621264]
+transform = Transform3D(1, 0, 0, 0, 0.98010176, 0.1984956, 0, -0.1984956, 0.98010176, 0, 2.2024577, 4.493266)
+
+[node name="ProximityTrigger" type="Area3D" parent="." unique_id=588670598]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ProximityTrigger" unique_id=1191239243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90148926, 0)
+shape = SubResource("CylinderShape3D_tm655")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1861030416]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1748643781]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -55.5
+offset_top = -23.0
+offset_right = 55.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press E to Fish"
+
+[connection signal="body_entered" from="ProximityTrigger" to="." method="_on_proximity_trigger_body_entered"]
+[connection signal="body_exited" from="ProximityTrigger" to="." method="_on_proximity_trigger_body_exited"]

@@ -1,0 +1,26 @@
+[gd_resource type="TextureSetsResource" format=3 uid="uid://8ib353vmydx6"]
+
+[ext_resource type="Texture2D" uid="uid://d2wagiqdtrqyi" path="res://Textures/Free/Sand/Sand_01/Sand_01_basecolor.png" id="1_jynce"]
+[ext_resource type="Texture2D" uid="uid://5jy20bnorr2m" path="res://Textures/Free/Sand/Sand_01/Sand_01_height.png" id="2_xf1du"]
+[ext_resource type="Texture2D" uid="uid://syki7v6yck0n" path="res://Textures/Free/Sand/Sand_01/Sand_01_normal.png" id="3_sv5ar"]
+[ext_resource type="Texture2D" uid="uid://bfvn86mj67f" path="res://Textures/Free/Sand/Sand_01/Sand_01_roughness.png" id="4_v2tj8"]
+[ext_resource type="Texture2D" uid="uid://don53a4u3x3vj" path="res://Textures/Free/Grass/Grass_01/Grass_01_basecolor.png" id="5_j5uov"]
+[ext_resource type="Texture2D" uid="uid://ikcqru4prmfp" path="res://Textures/Free/Grass/Grass_01/Grass_01_height.png" id="6_7yfud"]
+[ext_resource type="Texture2D" uid="uid://dhhlfrlla8hrc" path="res://Textures/Free/Grass/Grass_01/Grass_01_normal.png" id="7_80mtd"]
+[ext_resource type="Texture2D" uid="uid://dgni5c6sm8e41" path="res://Textures/Free/Grass/Grass_01/Grass_01_roughness.png" id="8_g41pv"]
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_vv07k"]
+albedoTexture = ExtResource("1_jynce")
+normalTexture = ExtResource("3_sv5ar")
+roughnessTexture = ExtResource("4_v2tj8")
+heightTexture = ExtResource("2_xf1du")
+specular = 0.826
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_ue8o5"]
+albedoTexture = ExtResource("5_j5uov")
+normalTexture = ExtResource("7_80mtd")
+roughnessTexture = ExtResource("8_g41pv")
+heightTexture = ExtResource("6_7yfud")
+
+[resource]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_vv07k"), SubResource("TextureSetResource_ue8o5")])

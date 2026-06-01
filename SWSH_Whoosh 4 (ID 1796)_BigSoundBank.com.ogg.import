@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bce7q2q554jyq"
+path="res://.godot/imported/SWSH_Whoosh 4 (ID 1796)_BigSoundBank.com.ogg-67f44f4e3c31688ef1cbf955ae559a5d.oggvorbisstr"
+
+[deps]
+
+source_file="res://SWSH_Whoosh 4 (ID 1796)_BigSoundBank.com.ogg"
+dest_files=["res://.godot/imported/SWSH_Whoosh 4 (ID 1796)_BigSoundBank.com.ogg-67f44f4e3c31688ef1cbf955ae559a5d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

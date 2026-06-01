@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cy5hc3r1jr7hw"]
+
+[ext_resource type="Script" uid="uid://b4gurartmvnf3" path="res://dialogue_system.gd" id="1_m0h81"]
+[ext_resource type="AudioStream" uid="uid://s6dbqm36pjy0" path="res://Assets/existentialtaco-confirm-tap-394001.mp3" id="2_7d2kg"]
+
+[node name="DialogueSystem" type="CanvasLayer" unique_id=1444086721 node_paths=PackedStringArray("text_label", "voice_blip")]
+script = ExtResource("1_m0h81")
+text_label = NodePath("ColorRect/RichTextLabel")
+voice_blip = NodePath("AudioStreamPlayer")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=762664438]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -58.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0.56512874, 0.60723734, 0.3894969, 0.41568628)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=1901790306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1900855112]
+stream = ExtResource("2_7d2kg")

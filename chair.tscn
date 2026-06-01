@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bydust8xt1r1i"]
+
+[ext_resource type="Script" uid="uid://cbjctriujueg0" path="res://chair.gd" id="1_58eu7"]
+[ext_resource type="PackedScene" uid="uid://ba75p8f18mue1" path="res://Textures/Free/Sand/Sand_01/a_bench.glb" id="1_knj3a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_knj3a"]
+size = Vector3(152.67651, 59.083405, 68.32837)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_58eu7"]
+size = Vector3(237.69144, 190.2344, 97.42859)
+
+[node name="Bench" type="Node3D" unique_id=991058601 node_paths=PackedStringArray("prompt_ui")]
+script = ExtResource("1_58eu7")
+prompt_ui = NodePath("CanvasLayer/Label")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1673434245 instance=ExtResource("1_knj3a")]
+transform = Transform3D(1.0763685, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4" parent_id_path=PackedInt32Array(1673434245, 1483041728) index="0" unique_id=1072338210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2159.0154, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4/StaticBody3D" unique_id=1995056146]
+transform = Transform3D(0.9999795, 0, 0, 0, 0.99997795, -6.252776e-13, 0, 6.252776e-13, 0.99997795, 28.45114, 3.2928896, -61.041035)
+shape = SubResource("BoxShape3D_knj3a")
+
+[node name="ProximityTrigger" type="Area3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4/StaticBody3D" unique_id=1868009059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -51.08534)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4/StaticBody3D/ProximityTrigger" unique_id=1651862205]
+transform = Transform3D(0.9999696, 0, 0, 0, 0.9999673, -1.0516032e-12, 0, 1.0516032e-12, 0.9999673, 12.181361, -17.623552, -11.091595)
+shape = SubResource("BoxShape3D_58eu7")
+
+[node name="SitPosition" type="Marker3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4" parent_id_path=PackedInt32Array(1673434245, 1483041728) index="1" unique_id=1067115929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2150.752, 0, -62.91834)
+
+[node name="StandPosition" type="Marker3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4" parent_id_path=PackedInt32Array(1673434245, 1483041728) index="2" unique_id=715459180]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -2150.752, 115.10931, -62.91833)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1154427607]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=149691228]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[connection signal="body_entered" from="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4/StaticBody3D/ProximityTrigger" to="." method="_on_proximity_trigger_body_entered"]
+[connection signal="body_exited" from="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Bench_01_0/Object_4/StaticBody3D/ProximityTrigger" to="." method="_on_proximity_trigger_body_exited"]
+
+[editable path="Sketchfab_Scene"]
