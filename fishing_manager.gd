@@ -56,7 +56,7 @@ func _process(delta: float) -> void:
 		FishingState.BITING:
 			bite_timer -= delta
 			if Input.is_action_just_pressed("interact") or Input.is_action_just_pressed("reel_in"):
-				if status_label: status_label.text = "HOOKED!\nHOLD TO REEL!"
+				if status_label: status_label.text = "HOOKED!\nHOLD SPACE TO REEL!\n Dont let Tension Get 100%"
 				current_state = FishingState.REELING
 			elif bite_timer <= 0:
 				if status_label: status_label.text = "It got away..."

@@ -4,6 +4,7 @@ extends CharacterBody3D
 @export var footstep_sound: Array[AudioStream]
 
 @export var run_speed = 5
+@export var target_node: Label
 
 var speed = run_speed
 var walk_speed = 1
@@ -19,9 +20,12 @@ var footstep_distance = 2.1
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	await get_tree().create_timer(1.0).timeout
 	DialogueSystem.start_dialogue([
-		"Here i am at the beach",
-		"gonna make 6 sandcastles sit on the benches and have some peace",
+		"Here i am at the beach. Mom loved it here",
+		"gonna make any 4 sandcastles sit on the benches and have some peace",
+		"press H for Help"
 		])
 
 
@@ -30,6 +34,12 @@ func _input(event: InputEvent) -> void:
 		rotation_degrees.y -= event.relative.x / 10
 		%Camera3D.rotation_degrees.x -= event.relative.y / 10
 		%Camera3D.rotation_degrees.x = clamp( %Camera3D.rotation_degrees.x, -90, 90 )
+	if event is InputEventKey and event.physical_keycode == KEY_H and event.pressed:
+		
+		# Make sure we actually assigned a node in the Inspector to prevent crashes
+		if target_node:
+			# The Pro-Trick: Set it to the exact opposite of whatever it currently is!
+			target_node.visible = not target_node.visible
 
 
 func _physics_process(delta: float) -> void:

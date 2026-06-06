@@ -1,0 +1,156 @@
+[gd_scene format=3 uid="uid://xc4j88rjblg0"]
+
+[ext_resource type="PackedScene" uid="uid://bydust8xt1r1i" path="res://chair.tscn" id="1_gx2gx"]
+[ext_resource type="PackedScene" uid="uid://doowrpqk65d71" path="res://mountain.glb" id="2_xhal0"]
+[ext_resource type="Shader" uid="uid://dqhp1dpddisu6" path="res://farm.gdshader" id="3_b54qk"]
+[ext_resource type="Script" uid="uid://ckp4b53u6oy0k" path="res://control.gd" id="4_5tfw5"]
+[ext_resource type="AudioStream" uid="uid://csmgwypp8iv8" path="res://Recording 2026-06-06 131300.ogg" id="5_xhal0"]
+[ext_resource type="Script" uid="uid://cam0yfmbdv3s2" path="res://audio_stream_player.gd" id="6_b54qk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jgloi"]
+sky_top_color = Color(0.55761784, 0.39111847, 0.4872632, 1)
+sky_horizon_color = Color(0.7891924, 0.6175458, 0.44861996, 1)
+sky_curve = 0.27037504
+sky_energy_multiplier = 1.1
+ground_horizon_color = Color(0.81914824, 0.6079585, 0.36940277, 1)
+sun_angle_max = 8.68
+sun_curve = 3.1668172
+
+[sub_resource type="Sky" id="Sky_u8p4c"]
+sky_material = SubResource("ProceduralSkyMaterial_jgloi")
+
+[sub_resource type="Environment" id="Environment_tyxyo"]
+background_mode = 2
+sky = SubResource("Sky_u8p4c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l5565"]
+render_priority = 0
+shader = ExtResource("3_b54qk")
+shader_parameter/deep_water = Color(0.101960786, 0.2509804, 0.40784314, 1)
+shader_parameter/shallow_water = Color(0.2, 0.34901962, 0.5137255, 1)
+shader_parameter/ripple_highlight = Color(0.34901962, 0.5019608, 0.61960787, 1)
+shader_parameter/chunk_size = 1.0
+shader_parameter/animation_fps = 8.0
+shader_parameter/water_speed = 0.15
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2wfhu"]
+material = SubResource("ShaderMaterial_l5565")
+
+[node name="Node3D" type="Node3D" unique_id=2003395921]
+
+[node name="Bench" parent="." unique_id=991058601 instance=ExtResource("1_gx2gx")]
+transform = Transform3D(0.19488493, 0, 0.98082614, 0, 1, 0, -0.98082614, 0, 0.19488493, 6.9098754, -0.007987022, 4.8397055)
+
+[node name="Camera3D" type="Camera3D" parent="Bench" unique_id=547782846]
+transform = Transform3D(-0.99922776, 0, 0.039294824, 0, 1, 0, -0.039294824, 0, -0.99922776, -0.018311024, 0.704064, -0.09215689)
+
+[node name="RayCast3D" type="RayCast3D" parent="Bench/Camera3D" unique_id=2096653625]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1005689179 instance=ExtResource("2_xhal0")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1092946622]
+environment = SubResource("Environment_tyxyo")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=242403168]
+transform = Transform3D(-0.06427884, -0.01980208, 0.9977356, 0.11035172, 0.99353045, 0.026828006, -0.9918119, 0.11182631, -0.061677843, 58.276684, 27.342, -1.8523407)
+light_color = Color(0.95686275, 0.80784315, 0.44313726, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2142256537]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, -5.430804, 0)
+mesh = SubResource("PlaneMesh_2wfhu")
+
+[node name="Control" type="Control" parent="." unique_id=2104961276]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_5tfw5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control" unique_id=1850528250]
+layer = -1
+
+[node name="Label" type="Label" parent="Control/CanvasLayer" unique_id=1878379903]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "LONER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=549814347]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 67.0
+offset_right = 80.0
+offset_bottom = 3.0
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="Control/VBoxContainer" unique_id=2085460165]
+layout_mode = 2
+text = "Start "
+
+[node name="Credits" type="Button" parent="Control/VBoxContainer" unique_id=1537993203]
+layout_mode = 2
+text = "Credits"
+
+[node name="Quit" type="Button" parent="Control/VBoxContainer" unique_id=1884308971]
+layout_mode = 2
+text = "Quit"
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=929570036]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Control/ColorRect" unique_id=678632028]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 2.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "Credits
+Palm tree by jeremy [Cc0] Poly Pizza
+House,Boat and other psx objects by 
+https://itch.io/profile/elbolilloduro
+Terrain made using TerraBrush
+Music Made using Chrome sound lab
+and Sound used from BigSoundBank
+Thanks for Playing
+Game BY aniket Biswas"
+
+[node name="Button" type="Button" parent="Control/ColorRect" unique_id=1530610020]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 2.0
+offset_right = 319.0
+offset_bottom = 33.0
+text = "back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1986612760]
+stream = ExtResource("5_xhal0")
+autoplay = true
+script = ExtResource("6_b54qk")
+
+[connection signal="pressed" from="Control/VBoxContainer/StartButton" to="Control" method="_on_start_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Credits" to="Control" method="_on_credits_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Quit" to="Control" method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/ColorRect/Button" to="Control" method="_on_button_pressed"]

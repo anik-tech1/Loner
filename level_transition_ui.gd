@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	# 1. Listen for the magic number. 
 	# (Change 'Global' and 'sandcastles_built' to match whatever you actually named them!)
-	if Global.Lake >= 6 and not visible:
+	if Global.Lake>=4 and not visible:
 		show() # Reveal the "Press F" UI!
 
 func _input(event: InputEvent) -> void:

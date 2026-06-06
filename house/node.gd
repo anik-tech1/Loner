@@ -47,11 +47,11 @@ func answer_phone() -> void:
 	
 	DialogueSystem.start_dialogue([
 		"Hello?", 
-		"Bro this vacation I am hosting a party wanna come?", 
+		"Colleague:Bro this vacation I am hosting a party wanna come?", 
 		"What will be in it",
-		"Booze , Girls , anything anyone want",
+		"Colleague:Booze , Girls , anything anyone want",
 		"Nah i have some other plans",
-		"oh come on! you dont even have friends other than us",
+		"Colleague:oh come on! you dont even have friends other than us",
 		"you won't understand."
 	])
 	

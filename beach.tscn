@@ -63,12 +63,12 @@ ground_horizon_color = Color(0.81914824, 0.6079585, 0.36940277, 1)
 sun_angle_max = 8.68
 sun_curve = 3.1668172
 
-[sub_resource type="Sky" id="Sky_u8p4c"]
+[sub_resource type="Sky" id="Sky_4y2dc"]
 sky_material = SubResource("ProceduralSkyMaterial_we80j")
 
 [sub_resource type="Environment" id="Environment_myndl"]
 background_mode = 2
-sky = SubResource("Sky_u8p4c")
+sky = SubResource("Sky_4y2dc")
 
 [sub_resource type="ZoneResource" id="ZoneResource_vvyr7"]
 heightMapImage = ExtResource("6_m3vnf")
@@ -232,11 +232,12 @@ points = PackedVector3Array(13.718851, 179.1164, 24.912895, -1.8861021, 163.6050
 
 [node name="Node3D" type="Node3D" unique_id=1309457788]
 
-[node name="Player" parent="." unique_id=169917354 instance=ExtResource("2_5g145")]
+[node name="Player" parent="." unique_id=169917354 node_paths=PackedStringArray("target_node") instance=ExtResource("2_5g145")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -1.5063219, 0)
 floor_max_angle = 1.0471976
 footstep_sound = Array[AudioStream]([])
 run_speed = 50
+target_node = NodePath("../Label")
 
 [node name="MeshInstance3D" parent="Player" index="0" unique_id=1254715583]
 visible = false
@@ -411,7 +412,7 @@ text = "Press E to Build
 "
 
 [node name="SandcastlePuzzle5" parent="." unique_id=369110934 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 6.10392, 77.15872)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 3.7483797, 77.15872)
 player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
 base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
 mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
@@ -421,7 +422,7 @@ text = "Press E to Build
 "
 
 [node name="SandcastlePuzzle6" parent="." unique_id=1541063007 node_paths=PackedStringArray("player_camera") instance=ExtResource("49_leup2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 6.10392, 11.667152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -306.29514, 3.1172466, 11.667152)
 player_camera = NodePath("../Player/HeadPosition/LandingAnimation/Camera3D")
 base_models = Array[Mesh]([SubResource("BoxMesh_76kr6"), SubResource("CylinderMesh_tm655"), SubResource("PrismMesh_ly2dj")])
 mid_models = Array[Mesh]([SubResource("PrismMesh_41rmn"), SubResource("CylinderMesh_8so16"), SubResource("BoxMesh_yl6i1")])
@@ -461,7 +462,7 @@ transform = Transform3D(-10, 0, -1.509958e-06, 0, 10, 0, 1.509958e-06, 0, -10, -
 [node name="Palm tree" parent="." unique_id=649662689 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 29.857395, 0.00637722, 233.0099)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree/palm_tree_01" parent_id_path=PackedInt32Array(649662689, 1037314422) index="0" unique_id=1517867415]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree/palm_tree_01" parent_id_path=PackedInt32Array(649662689, 974118953) index="0" unique_id=1517867415]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree/palm_tree_01/StaticBody3D" unique_id=157066522]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -511,7 +512,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree2" parent="." unique_id=1282401569 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -82.56325, 0.00637722, 233.0099)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree2/palm_tree_01" parent_id_path=PackedInt32Array(1282401569, 1037314422) index="0" unique_id=1708469480]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree2/palm_tree_01" parent_id_path=PackedInt32Array(1282401569, 974118953) index="0" unique_id=1708469480]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree2/palm_tree_01/StaticBody3D" unique_id=1629363818]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -561,7 +562,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree3" parent="." unique_id=1843424833 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -179.85086, 0.00637722, 233.0099)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree3/palm_tree_01" parent_id_path=PackedInt32Array(1843424833, 1037314422) index="0" unique_id=845909860]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree3/palm_tree_01" parent_id_path=PackedInt32Array(1843424833, 974118953) index="0" unique_id=845909860]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree3/palm_tree_01/StaticBody3D" unique_id=699705741]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -611,7 +612,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree4" parent="." unique_id=1795334119 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -179.85086, 0.00637722, 157.84677)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree4/palm_tree_01" parent_id_path=PackedInt32Array(1795334119, 1037314422) index="0" unique_id=98499715]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree4/palm_tree_01" parent_id_path=PackedInt32Array(1795334119, 974118953) index="0" unique_id=98499715]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree4/palm_tree_01/StaticBody3D" unique_id=218414370]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -661,7 +662,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree5" parent="." unique_id=856467286 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -16.774231, 0.00637722, 189.06493)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree5/palm_tree_01" parent_id_path=PackedInt32Array(856467286, 1037314422) index="0" unique_id=1558315757]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree5/palm_tree_01" parent_id_path=PackedInt32Array(856467286, 974118953) index="0" unique_id=1558315757]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree5/palm_tree_01/StaticBody3D" unique_id=16237514]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -711,7 +712,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree6" parent="." unique_id=746611709 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -64.072876, 0.00637722, 170.24069)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree6/palm_tree_01" parent_id_path=PackedInt32Array(746611709, 1037314422) index="0" unique_id=1026382031]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree6/palm_tree_01" parent_id_path=PackedInt32Array(746611709, 974118953) index="0" unique_id=1026382031]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree6/palm_tree_01/StaticBody3D" unique_id=1616022511]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -761,7 +762,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree16" parent="." unique_id=709578952 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 63.156975, 0.00637722, 239.38893)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree16/palm_tree_01" parent_id_path=PackedInt32Array(709578952, 1037314422) index="0" unique_id=206802502]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree16/palm_tree_01" parent_id_path=PackedInt32Array(709578952, 974118953) index="0" unique_id=206802502]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree16/palm_tree_01/StaticBody3D" unique_id=1294757765]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -811,7 +812,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree17" parent="." unique_id=1027424374 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 63.156975, 0.00637722, 192.27925)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree17/palm_tree_01" parent_id_path=PackedInt32Array(1027424374, 1037314422) index="0" unique_id=1082895486]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree17/palm_tree_01" parent_id_path=PackedInt32Array(1027424374, 974118953) index="0" unique_id=1082895486]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree17/palm_tree_01/StaticBody3D" unique_id=481783949]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -861,7 +862,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree18" parent="." unique_id=659548228 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 21.439903, 0.00637722, 192.27925)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree18/palm_tree_01" parent_id_path=PackedInt32Array(659548228, 1037314422) index="0" unique_id=1156275286]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree18/palm_tree_01" parent_id_path=PackedInt32Array(659548228, 974118953) index="0" unique_id=1156275286]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree18/palm_tree_01/StaticBody3D" unique_id=1836721585]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -911,7 +912,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree7" parent="." unique_id=1332776203 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -131.75601, 0.00637722, 170.24069)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree7/palm_tree_01" parent_id_path=PackedInt32Array(1332776203, 1037314422) index="0" unique_id=1691545064]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree7/palm_tree_01" parent_id_path=PackedInt32Array(1332776203, 974118953) index="0" unique_id=1691545064]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree7/palm_tree_01/StaticBody3D" unique_id=303956561]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -961,7 +962,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree8" parent="." unique_id=564766150 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -215.93207, 0.00637722, 170.24069)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree8/palm_tree_01" parent_id_path=PackedInt32Array(564766150, 1037314422) index="0" unique_id=957323601]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree8/palm_tree_01" parent_id_path=PackedInt32Array(564766150, 974118953) index="0" unique_id=957323601]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree8/palm_tree_01/StaticBody3D" unique_id=529265785]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1011,7 +1012,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree9" parent="." unique_id=30171080 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -248.78738, 0.00637722, 241.73674)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree9/palm_tree_01" parent_id_path=PackedInt32Array(30171080, 1037314422) index="0" unique_id=419922331]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree9/palm_tree_01" parent_id_path=PackedInt32Array(30171080, 974118953) index="0" unique_id=419922331]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree9/palm_tree_01/StaticBody3D" unique_id=2139332596]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1061,7 +1062,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree10" parent="." unique_id=1489250708 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -314.37286, 0.00637722, 241.73674)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree10/palm_tree_01" parent_id_path=PackedInt32Array(1489250708, 1037314422) index="0" unique_id=1646237638]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree10/palm_tree_01" parent_id_path=PackedInt32Array(1489250708, 974118953) index="0" unique_id=1646237638]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree10/palm_tree_01/StaticBody3D" unique_id=1153482752]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1111,7 +1112,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree11" parent="." unique_id=704604601 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -314.37286, 0.00637722, 183.82317)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree11/palm_tree_01" parent_id_path=PackedInt32Array(704604601, 1037314422) index="0" unique_id=905777721]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree11/palm_tree_01" parent_id_path=PackedInt32Array(704604601, 974118953) index="0" unique_id=905777721]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree11/palm_tree_01/StaticBody3D" unique_id=304490083]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1161,7 +1162,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree12" parent="." unique_id=255871650 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -383.59564, 0.00637722, 183.82317)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree12/palm_tree_01" parent_id_path=PackedInt32Array(255871650, 1037314422) index="0" unique_id=1285637790]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree12/palm_tree_01" parent_id_path=PackedInt32Array(255871650, 974118953) index="0" unique_id=1285637790]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree12/palm_tree_01/StaticBody3D" unique_id=1317534897]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1211,7 +1212,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree13" parent="." unique_id=509101141 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -399.5046, 0.00637722, 219.27823)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree13/palm_tree_01" parent_id_path=PackedInt32Array(509101141, 1037314422) index="0" unique_id=1668932351]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree13/palm_tree_01" parent_id_path=PackedInt32Array(509101141, 974118953) index="0" unique_id=1668932351]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree13/palm_tree_01/StaticBody3D" unique_id=1830875193]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1261,7 +1262,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree14" parent="." unique_id=604942435 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -478.442, 0.00637722, 156.88608)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree14/palm_tree_01" parent_id_path=PackedInt32Array(604942435, 1037314422) index="0" unique_id=949386265]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree14/palm_tree_01" parent_id_path=PackedInt32Array(604942435, 974118953) index="0" unique_id=949386265]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree14/palm_tree_01/StaticBody3D" unique_id=350918309]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1311,7 +1312,7 @@ shape = SubResource("ConvexPolygonShape3D_62fc5")
 [node name="Palm tree15" parent="." unique_id=1081361225 instance=ExtResource("51_343px")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -478.442, 0.00637722, 232.6891)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree15/palm_tree_01" parent_id_path=PackedInt32Array(1081361225, 1037314422) index="0" unique_id=400897702]
+[node name="StaticBody3D" type="StaticBody3D" parent="Palm tree15/palm_tree_01" parent_id_path=PackedInt32Array(1081361225, 974118953) index="0" unique_id=400897702]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Palm tree15/palm_tree_01/StaticBody3D" unique_id=1087860776]
 shape = SubResource("ConvexPolygonShape3D_343px")
@@ -1373,6 +1374,20 @@ grow_vertical = 0
 text = "Press F to go to the Next Spot"
 
 [node name="SceneTransition" parent="." unique_id=2095953779 instance=ExtResource("53_4y2dc")]
+
+[node name="Label" type="Label" parent="." unique_id=1468897145]
+visible = false
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 322.0
+grow_vertical = 2
+text = "When making sandcastles click on
+any shapes to change them
+and get the desired shape . 
+shape will be completely random.
+to make it harder i am not gonna tell 
+you the shape.
+(it may take some tries)"
 
 [editable path="Player"]
 [editable path="SandcastlePuzzle"]

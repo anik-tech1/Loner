@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
-run/main_scene="uid://mgp02mkor0at"
+config/name="Loner"
+run/main_scene="uid://xc4j88rjblg0"
 config/features=PackedStringArray("4.6", "C#", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/stretch_mode=5
+boot_splash/image="uid://dy2qdglmabyud"
+config/icon="res://Screenshot 2026-06-06 151120.ico"
+boot_splash/minimum_display_time=2000
 
 [autoload]
 

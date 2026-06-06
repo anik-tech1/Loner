@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csmgwypp8iv8"
+path="res://.godot/imported/Recording 2026-06-06 131300.ogg-2c31d0082cb6dff95917c5d2470f3d2f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Recording 2026-06-06 131300.ogg"
+dest_files=["res://.godot/imported/Recording 2026-06-06 131300.ogg-2c31d0082cb6dff95917c5d2470f3d2f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

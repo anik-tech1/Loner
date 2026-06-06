@@ -31,6 +31,7 @@
 [ext_resource type="Image" uid="uid://dne3lmochw1dy" path="res://Node3D/Heightmap_1_1.res" id="17_2dho1"]
 [ext_resource type="Shader" uid="uid://bin7cd3okwc22" path="res://cloud.gdshader" id="17_qwqt5"]
 [ext_resource type="Image" uid="uid://gyv1hau3pmxk" path="res://Node3D/Splatmap_1_1_0.res" id="18_i4lox"]
+[ext_resource type="Script" uid="uid://cl6sis8d6v46e" path="res://fish.gd" id="32_8yanj"]
 
 [sub_resource type="TextureSetResource" id="TextureSetResource_dbtmh"]
 albedoTexture = ExtResource("1_dmuu5")
@@ -78,7 +79,7 @@ splatmapsImage = Array[Image]([ExtResource("18_i4lox")])
 [sub_resource type="ZonesResource" id="ZonesResource_vkr66"]
 zones = Array[ZoneResource]([SubResource("ZoneResource_bw225"), SubResource("ZoneResource_n7cm8"), SubResource("ZoneResource_uqttp"), SubResource("ZoneResource_gwmru"), SubResource("ZoneResource_edibg"), SubResource("ZoneResource_few84"), SubResource("ZoneResource_03hsc")])
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_l5565"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a43w8"]
 render_priority = 0
 shader = ExtResource("7_0setc")
 shader_parameter/deep_water = Color(0.101960786, 0.2509804, 0.40784314, 1)
@@ -89,7 +90,7 @@ shader_parameter/animation_fps = 8.0
 shader_parameter/water_speed = 0.15
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1brwc"]
-material = SubResource("ShaderMaterial_l5565")
+material = SubResource("ShaderMaterial_a43w8")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c5bxn"]
 size = Vector3(7.942883, 8.514587, 19.597046)
@@ -151,14 +152,14 @@ sky = SubResource("Sky_2rp3p")
 ambient_light_source = 3
 ambient_light_color = Color(0.46229059, 0.46229059, 0.46229059, 1)
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_qwqt5"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tuxgk"]
 frequency = 0.005
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fjlvg"]
-noise = SubResource("FastNoiseLite_qwqt5")
+noise = SubResource("FastNoiseLite_tuxgk")
 seamless = true
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_fjlvg"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mf73w"]
 render_priority = 0
 shader = ExtResource("17_qwqt5")
 shader_parameter/cloud_texture = SubResource("NoiseTexture2D_fjlvg")
@@ -169,7 +170,7 @@ shader_parameter/pixel_density = 1024.0
 shader_parameter/animation_fps = 60.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_qwqt5"]
-material = SubResource("ShaderMaterial_fjlvg")
+material = SubResource("ShaderMaterial_mf73w")
 
 [node name="Node3D" type="Node3D" unique_id=381737767 node_paths=PackedStringArray("fish_models")]
 script = ExtResource("1_ickss")
@@ -202,7 +203,7 @@ mesh = SubResource("PlaneMesh_1brwc")
 [node name="Pesca" parent="." unique_id=1744862266 instance=ExtResource("8_v46g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.422966, 0)
 
-[node name="Cylinder_006" parent="Pesca" index="5" unique_id=952472742]
+[node name="Cylinder_006" parent="Pesca" index="5" unique_id=1211742587]
 transform = Transform3D(0.026173081, 0.21403539, 0, -0.016674735, 0.33595538, 0, 0, 0, 0.03103348, -4.004399, 0.05420998, -3.234756)
 
 [node name="Area3D" type="Area3D" parent="Pesca/Cylinder_006" index="0" unique_id=165601232 node_paths=PackedStringArray("fishing_manager")]
@@ -344,5 +345,19 @@ text = "Press E to Fish"
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1967263932]
 transform = Transform3D(1000, 0, 0, 0, -1, -8.742278e-05, 0, 8.742278e-08, -1000, 0, 107.810524, 0)
 mesh = SubResource("PlaneMesh_qwqt5")
+
+[node name="LevelTransitionUI" type="CanvasLayer" parent="." unique_id=323694539]
+script = ExtResource("32_8yanj")
+next_scene_path = "res://LastScene.tscn"
+
+[node name="Label" type="Label" parent="LevelTransitionUI" unique_id=1732926389]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press F to go to the Next Spot"
 
 [editable path="Pesca"]
