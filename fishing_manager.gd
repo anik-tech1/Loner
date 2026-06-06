@@ -97,14 +97,13 @@ func handle_reeling(delta: float) -> void:
 		fish_distance -= reel_speed * delta
 		line_tension += tension_gain * delta
 		
-		# NEW: Play the reeling loop if it isn't already playing
 		if sfx_reel and not sfx_reel.playing:
 			sfx_reel.play()
 	else:
 		line_tension -= tension_recovery * delta
 		fish_distance += fish_escape_speed * delta
 		
-		# NEW: Stop the reeling loop immediately when the player lets go
+		
 		if sfx_reel and sfx_reel.playing:
 			sfx_reel.stop()
 
@@ -131,7 +130,6 @@ func end_fishing() -> void:
 	if sfx_reel and sfx_reel.playing:
 		sfx_reel.stop()
 		
-	# NEW: Immediately unlock the camera so the player can look away
 	if player_camera: player_camera.can_look = true
 		
 	await get_tree().create_timer(2.0).timeout 

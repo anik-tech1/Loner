@@ -1,9 +1,9 @@
 extends Control
 
-@export var first_level_path: String = "res://house/node_3d.tscn" # Put your beach scene path here!
+@export var first_level_path: String = "res://house/node_3d.tscn" 
 @onready var creds = $ColorRect
 func _ready() -> void:
-	# Make sure the mouse is visible when we are on the main menu!
+
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 func _on_start_button_pressed() -> void:

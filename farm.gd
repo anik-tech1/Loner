@@ -18,23 +18,20 @@ func _ready() -> void:
 			fish.hide()
 
 func _process(_delta: float) -> void:
-	# Only update the meshes if the Global number has actually changed!
+	
 	if Global.Fishes != last_fish_count:
 		last_fish_count = Global.Fishes
 		
-		# Prevent errors if the number somehow goes above your max!
+		
 		var max_fishes = clampi(Global.Fishes, 0, fish_models.size())
 		
-		# Turn on the correct number of fishes
 		update_fish_visibility(max_fishes)
 
 func update_fish_visibility(amount_to_show: int) -> void:
-	# Loop through our list of fish
 	for i in range(fish_models.size()):
 		var current_fish = fish_models[i]
 		
 		if current_fish:
-			# If this fish's spot in line is less than our total amount, show it!
 			if i < amount_to_show:
 				current_fish.show()
 			else:

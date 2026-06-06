@@ -36,9 +36,7 @@ func _input(event: InputEvent) -> void:
 		%Camera3D.rotation_degrees.x = clamp( %Camera3D.rotation_degrees.x, -90, 90 )
 	if event is InputEventKey and event.physical_keycode == KEY_H and event.pressed:
 		
-		# Make sure we actually assigned a node in the Inspector to prevent crashes
 		if target_node:
-			# The Pro-Trick: Set it to the exact opposite of whatever it currently is!
 			target_node.visible = not target_node.visible
 
 

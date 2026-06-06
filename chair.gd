@@ -7,7 +7,7 @@ extends Node3D
 var is_player_near: bool = false
 var is_seated: bool = false
 
-# We store a reference to the player when they walk into the zone
+
 var player_node: CharacterBody3D = null 
 
 func _process(_delta: float) -> void:
@@ -21,11 +21,11 @@ func sit_down() -> void:
 	is_seated = true
 	if prompt_ui: prompt_ui.text = "Press E to Stand Up"
 	
-	# 1. Turn off the player's walking physics so they are frozen!
+
 	if player_node:
 		player_node.set_physics_process(false) 
 		
-		# 2. Smoothly glide the player into the seat over 1 second
+
 		var tween = create_tween()
 		tween.tween_property(player_node, "global_position", sit_position.global_position, 1.0).set_trans(Tween.TRANS_SINE)
 
@@ -34,11 +34,9 @@ func stand_up() -> void:
 	if prompt_ui: prompt_ui.text = "Press E to Sit"
 	
 	if player_node:
-		# 1. Glide them back to the standing position in front of the bench
 		var tween = create_tween()
 		tween.tween_property(player_node, "global_position", stand_position.global_position, 0.5).set_trans(Tween.TRANS_SINE)
 		
-		# 2. Wait for the glide to finish, then give them their legs back!
 		await tween.finished
 		player_node.set_physics_process(true)
 
@@ -47,7 +45,7 @@ func stand_up() -> void:
 func _on_proximity_trigger_body_entered(body: Node3D) -> void:
 	if "Player" in body.name and not is_seated:
 		is_player_near = true
-		player_node = body # Save the player so we know who to teleport!
+		player_node = body 
 		
 		if prompt_ui: 
 			prompt_ui.text = "Press E to Sit"

@@ -16,13 +16,12 @@ var pitch: float = 0.0
 var yaw: float = 0.0
 var start_yaw: float = 0.0
 
-# NEW: A flag to prevent the camera from snapping or moving during the cutscene
+
 var can_look: bool = false 
 
 @onready var mesh = $"../Untitled"
 
 func _ready() -> void:
-	# THE FIX: Grab the starting rotations IMMEDIATELY, before any 'await' timers run!
 	yaw = rotation.y
 	pitch = rotation.x
 	start_yaw = rotation.y
@@ -68,11 +67,10 @@ func _ready() -> void:
 	SceneTransition.fade_in(1.0)
 	
 	
-	# NEW: The sequence is over, unlock the player's neck!
 	can_look = true
 
 func _input(event: InputEvent) -> void:
-	# NEW: If the cutscene is playing, completely ignore the mouse
+	
 	if not can_look:
 		return
 		
